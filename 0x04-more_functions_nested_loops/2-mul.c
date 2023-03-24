@@ -9,6 +9,5 @@
  */
 int mul(int a, int b)
 {
-printf("%d\n", mul(6, 10));
-return (0);
+return (a*b);
 }
