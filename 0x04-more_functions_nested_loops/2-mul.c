@@ -9,5 +9,6 @@
  */
 int mul(int a, int b)
 {
-return (a * b);
+printf("%d\n", mul(6, 10));
+return (0);
 }
