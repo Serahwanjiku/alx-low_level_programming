@@ -1,18 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code for
- *
- * Return: Always 0.
+ * reverse_array - prints reverse array.
+ * @a: array to be compared.
+ * @n: size of array.
+ * Return: reversed array.
  */
-int main(void)
+void reverse_array(int *a, int n)
 {
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
+	int swap, begin, end;
 
-    p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
+	{
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
+	}
 }
