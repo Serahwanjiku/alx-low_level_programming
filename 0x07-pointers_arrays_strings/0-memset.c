@@ -5,7 +5,7 @@
  *@b: the desired value
  *@n: number of bytes to be changed
  *
- *Return: always zero
+ *Return: number of bytes to be changed
  */
 char *_memset(char *s, char b, unsigned int n)
 {
